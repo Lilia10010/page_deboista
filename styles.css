@@ -410,6 +410,7 @@ footer
     
     display: flex;
     flex-direction: row-reverse;   
+    z-index: 1;
  }
  .modal-close span
  {
