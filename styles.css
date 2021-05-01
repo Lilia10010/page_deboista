@@ -92,6 +92,7 @@ header ul li a
 {
     display: inline-block;
     color: #8127ce;
+    cursor: no-drop;
     font-weight: 600;
     font-size: 1rem;
     margin-left: 10px;
@@ -119,12 +120,17 @@ header ul li a
     }
 }
 
+header ul li a.active
+{    
+    cursor: pointer;
+}
 header ul li a.active,
 header ul li a:hover
 {
     background: #8127ce;
     color: #fff;
     border-radius: 30px;
+    
 }
 
 
@@ -325,10 +331,6 @@ header ul li a:hover
         cursor: pointer;
     }
 
-    /* .mosque
-    {
-        max-width: 700px;
-    } */
     .content .textBox h2
     {
         font-size: 2.5rem;
@@ -337,41 +339,21 @@ header ul li a:hover
 
 @media (max-width: 600px)
 {
+    .content-modal
+    {
+        overflow-x: hidden !important;
+    }
+    .content .textBox > ul li
+    {
+        font-size: 1.1rem;
+        color: #cdcdcd;
+    }
     .mosque
     {
         opacity: 0.7 !important;
     }
 }
 
-/* styles modal */
-
-/* .action
-{
-    position: fixed;
-    top: 20px;
-    right: 30px;    
-    z-index: 20000;
-}
-
-.action .profile
-{
-    position: relative;
-    width: 160px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-} */
-
-/* .action .profile a
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 .action
 {
     position: relative;
@@ -426,7 +408,10 @@ header ul li a:hover
     font-size: 2rem !important;
      cursor: pointer;
      position: absolute;
+     margin-top: -31px;
+     color: #000 !important;
  }
+ 
 .action h3
 {
     width: 100%;
