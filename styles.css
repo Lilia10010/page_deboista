@@ -260,6 +260,16 @@ header ul li a:hover
     animation-delay: 3.5s;
 }
 
+footer
+{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: .3;
+}
+
 @keyframes fade_in{
     0%
     {
